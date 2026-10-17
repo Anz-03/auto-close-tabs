@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "闲置标签自动关闭"
+  },
+  "extensionDescription": {
+    "message": "标签太多时，自动关闭长时间未访问的标签页。支持自定义数量上限和闲置时限，固定标签始终保留。"
+  },
+  "actionTitle": {
+    "message": "闲置标签自动关闭"
+  }
+}

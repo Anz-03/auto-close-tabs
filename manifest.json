@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "闲置标签自动关闭 · Auto Close Tabs",
-  "version": "1.0.1",
-  "description": "标签太多时，自动关闭长时间未访问的标签页。支持自定义数量上限和闲置时限，固定标签始终保留。",
+  "name": "__MSG_extensionName__",
+  "version": "1.0.2",
+  "description": "__MSG_extensionDescription__",
   "minimum_chrome_version": "120",
   "permissions": [
     "tabs",
@@ -14,7 +14,7 @@
     "type": "module"
   },
   "action": {
-    "default_title": "闲置标签自动关闭",
+    "default_title": "__MSG_actionTitle__",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icons/icon-16.png",
@@ -27,5 +27,6 @@
     "32": "icons/icon-32.png",
     "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
-  }
+  },
+  "default_locale": "zh_CN"
 }

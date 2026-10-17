@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Auto Close Idle Tabs"
+  },
+  "extensionDescription": {
+    "message": "Automatically close idle tabs when your tab limit is exceeded. Customizable idle timeout and tab limit; pinned tabs stay open."
+  },
+  "actionTitle": {
+    "message": "Auto Close Idle Tabs"
+  }
+}
