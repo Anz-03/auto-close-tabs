@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>闲置标签自动关闭</title>
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <header><img class="mark" src="icons/icon-48.png" alt=""><div><h1>闲置标签自动关闭</h1><p>AUTO CLOSE IDLE TABS</p></div><label class="toggle"><input id="enabled" type="checkbox" aria-label="启用自动清理"><span></span></label></header>
+  <main>
+    <section class="summary"><div class="eyebrow">给正在做的事，留点空间</div><div class="count"><strong id="total">—</strong><span>/ <span id="limit">—</span> 个标签</span><span id="badge" class="badge">读取中</span></div><div class="track"><div id="progress"></div></div><p id="summary">正在读取浏览器标签…</p></section>
+    <form id="settings">
+      <div class="section-title">清理规则 <span>LRU · 最久未访问优先</span></div>
+      <label class="field"><span>标签总数上限<small>包括固定标签，统计所有普通窗口</small></span><span class="number"><input id="maxTabs" type="number" min="1" max="10000" required aria-label="标签总数上限"><span>个</span></span></label>
+      <label class="field"><span>闲置多久后可关闭<small>从离开标签页开始计时</small></span><span class="number"><input id="idleMinutes" type="number" min="1" max="10080" required aria-label="闲置分钟数"><span>分钟</span></span></label>
+      <label class="audio"><input id="protectAudio" type="checkbox">保留正在播放声音的标签</label>
+      <div class="actions"><button type="submit" class="primary">保存规则</button><button type="button" id="clean">立即检查</button></div>
+    </form>
+    <section class="tabs-section"><div class="section-title">标签一览 <span>点击右侧按钮固定 / 取消固定</span></div><div id="tabs"></div></section>
+    <p class="note">固定及当前选中的标签始终保留。只在超限时清理，达到上限即停止；没有符合闲置条件的标签时允许暂时超限。</p>
+    <div id="message" role="status" aria-live="polite"></div>
+  </main>
+  <footer><span class="dot"></span>本地运行 · 每 30 秒检查<span>AUTO CLOSE TABS</span></footer>
+</body>
+</html>

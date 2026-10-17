@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+ <rect width="1280" height="800" fill="#f6f5f0"/>
+ <circle cx="1140" cy="50" r="400" fill="#e8ede3"/>
+ <g font-family="PingFang SC,Arial,sans-serif" fill="#29392f">
+  <text x="80" y="105" font-size="22" letter-spacing="4" fill="#5e7952">AUTO CLOSE TABS</text>
+  <text x="80" y="218" font-size="54" font-weight="600">闲置标签自动关闭</text>
+  <text x="80" y="280" font-size="26" fill="#63745e">标签太多了？让不用的页面自动退场。</text>
+  <g font-size="24">
+   <circle cx="95" cy="385" r="6" fill="#5e7952"/><text x="120" y="394">超过数量上限，才开始清理</text>
+   <circle cx="95" cy="455" r="6" fill="#5e7952"/><text x="120" y="464">最久未访问的闲置标签优先</text>
+   <circle cx="95" cy="525" r="6" fill="#5e7952"/><text x="120" y="534">固定标签与当前选中页始终保留</text>
+  </g>
+  <rect x="80" y="620" width="310" height="54" rx="27" fill="#315942"/>
+  <text x="235" y="655" font-size="20" fill="#ffffff" text-anchor="middle">本地运行 · 无需注册登录</text>
+  <g transform="translate(760 180)">
+   <rect width="420" height="450" rx="28" fill="#fffef9" stroke="#dce3d6" stroke-width="2"/>
+   <text x="32" y="53" font-size="19" font-weight="600">按你的规则，留出空间</text>
+   <rect x="28" y="80" width="364" height="120" rx="16" fill="#e8ede3"/>
+   <text x="48" y="119" font-size="16" fill="#63745e">默认清理规则</text>
+   <text x="48" y="166" font-size="36">20 个</text><text x="181" y="165" font-size="18" fill="#63745e">标签总数上限</text>
+   <text x="34" y="246" font-size="20">闲置时限</text><text x="386" y="246" font-size="22" text-anchor="end">20 分钟</text>
+   <path d="M32 266h356" stroke="#e4e6de"/>
+   <text x="34" y="310" font-size="20">固定标签</text><text x="386" y="310" font-size="20" text-anchor="end" fill="#5e7952">始终保留</text>
+   <path d="M32 330h356" stroke="#e4e6de"/>
+   <text x="34" y="373" font-size="20">达到上限</text><text x="386" y="373" font-size="20" text-anchor="end" fill="#5e7952">停止清理</text>
+   <text x="210" y="420" font-size="13" text-anchor="middle" fill="#899184">规则示意 · 数量上限与闲置时限均可自定义</text>
+  </g>
+  <text x="80" y="752" font-size="16" fill="#899184">没有符合闲置条件的标签时，允许暂时超限。</text>
+ </g>
+</svg>
